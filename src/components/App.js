@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PostList from './PostList';
+import { connect } from 'react-redux';
 
 const App = () => {
         return (
@@ -10,4 +11,4 @@ const App = () => {
         );
 };
 
-export default App;
+export default connect()(App);
